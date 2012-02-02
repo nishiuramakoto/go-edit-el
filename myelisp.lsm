@@ -1,0 +1,21 @@
+Begin3
+Title:		myelisp
+Version:	0.1.0
+Entered-date:	2012-02-03
+Description:	A collection of my emacs lisp files
+		myelisp.lsm.  Generated from myelisp.lsm.in by configure.
+		Please edit myelisp.lsm.in to fix the Keywords and
+		Primary-site entries, add several more lines of
+		description here if appropriate, and to delete these
+		instructions.
+Keywords:	[substitute your keywords here]
+Author: 	makoto@localhost (makoto)
+Maintained-by:	makoto@localhost (makoto)
+Primary-site:	metlab.unc.edu pub/Linux/apps/some/directory
+		31k myelisp-0.1.0.tar.gz
+		500  myelisp.lsm
+Alternate-site: 
+Original-site:  
+Platforms:      
+Copying-policy:	GNU copyleft
+End
