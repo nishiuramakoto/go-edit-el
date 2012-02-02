@@ -13,3 +13,6 @@ CLEANFILES= $(dist_bin_SCRIPTS)
 compile-getopt: compile-getopt.in Makefile
 	sed -e 's,[@]lispdir[@],$(lispdir),g' $(srcdir)/compile-getopt.in > compile-getopt
 	chmod +x compile-getopt
+
+xpms: convert-moku.sh convert-go-xpms.el
+	PATH=.:$$PATH emacs --batch --eval='(setq xpm-out-dir "/tmp/go-edit/")' --load=convert-go-xpms.el

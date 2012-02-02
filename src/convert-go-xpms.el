@@ -8,7 +8,7 @@
     (write-region (point-min) (point-max) file)))
 
 (defun convert-xpm (infile outfile)
-  (shell-command (format "/home/makoto/src/myelisp/src/convert-moku.sh %s %s" infile outfile)))
+  (shell-command (format "convert-moku.sh %s %s" infile outfile)))
 
 (defun file-contents (file)
   "return file contents as string"
@@ -17,7 +17,7 @@
     (buffer-string)))
 
 (defun make-new-gnugo-xpms ()
-  (let ((default-directory "/tmp/"))
+  (let ((default-directory xpm-out-dir))
     (loop for x in gnugo-xpms
 	  for key = (first x)
 	  for image = (cddr x)

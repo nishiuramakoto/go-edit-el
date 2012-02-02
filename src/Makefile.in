@@ -423,6 +423,9 @@ uninstall-am: uninstall-dist_binSCRIPTS uninstall-dist_dataDATA \
 compile-getopt: compile-getopt.in Makefile
 	sed -e 's,[@]lispdir[@],$(lispdir),g' $(srcdir)/compile-getopt.in > compile-getopt
 	chmod +x compile-getopt
+
+xpms: convert-moku.sh convert-go-xpms.el
+	PATH=.:$$PATH emacs --batch --eval='(setq xpm-out-dir "/tmp/go-edit/")' --load=convert-go-xpms.el
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.
 .NOEXPORT:
