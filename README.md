@@ -14,11 +14,11 @@ I wrote this long ago to practice tsumegos (or Go problems, tsumeru =
 to pack,shorten,finalize, or something like that). But eventually I
 threw it away, mostly due to lack of time, but partly because I
 realized I would never reach the level of high dans. (I was 2d KGS at
-the time.) The intended usage scenario is this: you grab a book of
+the time.) The intended usage scenario was this: you grab a book of
 tsumegos (classical ones are not copyrighted) from your local library
 (if any), enter SGF files, and practice it.
 
-Apparently the program works for emacs-24, so I decided to upload it.
+Apparently the program kind of works for emacs-24, so I decided to upload it.
 I wish I knew GitHub. Hope this little program still helps someone.
 
 Build & Basic Usage
